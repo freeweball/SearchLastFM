@@ -1,0 +1,146 @@
+.company {
+  position: relative;
+
+  width: $mobile-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 28px;
+  padding-left: 16px;
+  padding-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 770px;
+    padding-top: 74px;
+    padding-bottom: 35px;
+    padding-left: 286px;
+    padding-right: 25px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 25px;
+      left: 0;
+
+      width: 250px;
+      height: 360px;
+
+      background-image: url("../img/year-2005.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1412px;
+    padding-left: 308px;
+
+    &::before {
+      top: 77px;
+      left: 105px;
+
+      width: 215px;
+      height: 317px;
+
+      background-size: cover;
+    }
+  }
+}
+
+.company h3 {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: $alternate-font;
+  color: $gray;
+  font-size: $font-size-xl;
+  line-height: em(39px, $font-size-xl);
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+
+    font-size: $font-size-xxl;
+    line-height: 51px;
+  }
+}
+
+.company p {
+  margin: 0;
+  margin-bottom: 40px;
+
+  color: $gray;
+  font-size: $font-size;
+  line-height: em(22px, $font-size);
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 984px;
+  }
+}
+
+.company p:last-of-type {
+  margin-bottom: 0;
+}
+
+.company__end {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.company__ellipsis {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.company_more-info {
+  display: inline-block;
+  margin-top: 30px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  font-family: $alternate-font;
+  color: $blue;
+  font-size: $font-size-sm;
+  line-height: em(16px, $font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 1px solid $blue;
+  border-radius: 5px;
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
