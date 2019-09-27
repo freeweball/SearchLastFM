@@ -154,7 +154,6 @@
       window.load(successHandlerAlbum, errorHandler, ALBUM);
 
       setTimeout(function () {
-        window.util.deleteItem(classList, classLink);
         window.util.render(dataAlbum, photoList, getPhoto,);
         photoTitle.textContent = linkText;
         closeButton.classList.remove(hiddenClass);

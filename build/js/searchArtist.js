@@ -154,7 +154,7 @@
       window.load(successHandlerAlbum, errorHandler, ALBUM);
 
       setTimeout(function () {
-        window.util.deleteItem(classList, classLink);
+        // window.util.deleteItem(classList, classLink);
         window.util.render(dataAlbum, photoList, getPhoto,);
         photoTitle.textContent = linkText;
         closeButton.classList.remove(hiddenClass);
@@ -168,7 +168,7 @@
     mainPageWrapper.classList.toggle(hiddenClass);
   });
 
-  document.addEventListener('keydown', function (evt) {
+  mainPageWrapper.addEventListener('keydown', function (evt) {
     if (evt.keyCode === ESC_KEYCODE) {
       window.util.deleteItem(classPhotoDelete, classLink);
       mainPageWrapper.classList.toggle(hiddenClass);
