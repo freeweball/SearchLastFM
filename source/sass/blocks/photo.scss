@@ -1,0 +1,63 @@
+.photo__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $white;
+}
+
+.photo__list {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 750px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+
+  list-style: none;
+}
+
+.photo__close-list {
+  position: absolute;
+  text-outline: 20px;
+  right: 20px;
+
+  cursor: pointer;
+}
+
+.photo__title {
+  display: inline-block;
+  width: 100%;
+}
+
+.photo__item {
+  width: 174px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photo__name {
+  width: 174px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid $blue;
+}
+
+.photo__album {
+  width: 174px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}

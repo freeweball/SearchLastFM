@@ -1,0 +1,28 @@
+.main {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.main__title {
+  font-size: $font-size-md;
+}
+
+.main__search {
+  border: 2px solid $blue;
+}
+
+.main__button-search {
+  color: $dark-gray;
+  background-color: inherit;
+  border: 2px solid $blue;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+}

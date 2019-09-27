@@ -1,0 +1,32 @@
+.music__list {
+  width: 320px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-top: 20px;
+
+  list-style: none;
+}
+
+.music__item {
+  width: 320px;
+  text-align: left;
+
+  &:hover {
+    color: $dark-gray;
+    background-color: $blue;
+  }
+}
+
+.music__item-link {
+  color: $gray;
+  font-size: $font-size-sm;
+  line-height: em(20px, $font-size-sm);
+  text-align: left;
+  text-decoration: none;
+}
+
+// * {
+//   outline: 1px dashed red;
+// }

@@ -8,20 +8,24 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-  <div>
-    <form action="#" method="post">
-      <h1>Поиск исполнителя</h1>
-      <label class="field-checkbox">
-        <span>Поиск:</span>
-        <input type="text" checked="">
-      </label>
-      <button class="field-action__button" type="button" disabled="">Искать</button>
-    </form>
-    <ul>
-    </ul>
-    <ul class="photo__item">
-    </ul>
-  </div>
+    <div class="main">
+      <div class="main__wrapper-search">
+        <h1 class="main__title">Поиск исполнителя</h1>
+        <label>
+          <span class="main__label-search">Поиск:</span>
+          <input class="main__search" type="text" checked="">
+        </label>
+        <button class="main__button-search" type="button" disabled="">Искать</button>
+      </div>
+      <ul class="music__list">
+      </ul>
+    <div class="photo__wrapper">
+      <ul class="photo__list">
+        <span class="photo__close-list">Закрыть</span>
+        <h1 class="photo__title"></h1>
+      </ul>
+    </div>
+    </div>
 <!--Ошибка-->
   <template id="error">
     <div class="error">
@@ -31,13 +35,14 @@
   </template>
 <!--Результат поиска исполнителя-->
   <template id="performer">
-    <li class="performer">
-      <a class="performer__link" href="#"></a>
+    <li class="music__item">
+      <a class="music__item-link" href="#"></a>
     </li>
   </template>
 <!--Фотография альбома-->
   <template id="photo">
-    <li class="photo">
+    <li class="photo__item">
+      <span class="photo__name"></span>
       <img class="photo__album" href="">
     </li>
   </template>
