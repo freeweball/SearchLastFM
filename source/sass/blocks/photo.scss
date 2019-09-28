@@ -10,27 +10,45 @@
 }
 
 .photo__list {
-  position: relative;
+  @media (min-width: $mobile-width) {
+    position: relative;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 750px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 780px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
 
-  list-style: none;
+    list-style: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: left;
+  }
 }
 
 .photo__close-list {
+  padding: 5px;
+
   position: absolute;
-  text-outline: 20px;
+  top: 20px;
   right: 20px;
 
+  border: 1px solid $blue;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .photo__title {
@@ -43,6 +61,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .photo__name {
